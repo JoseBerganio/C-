@@ -1,38 +1,104 @@
-using System.Windows.Forms;
-using System.Drawing.Text;
-
 namespace MyDesktopApp.Modules.Registration{
-
-    public partial class RegistrationForm : Form
+    partial class RegistrationForm
     {
-        public RegistrationForm(){
-            InitializeComponent();
-        }
+        private TextBox txtFirstName;
+        private TextBox txtLastName;
+        private TextBox txtPassword;
+        private TextBox txtEmail;
+    
+        private Label lblFirstName;
+        private Label lblLastName;
+        private Label lblPassword;
+        private Label lblEmail;
 
-        public void startRegistration(object? sender, EventArgs args){
-            string firstName = txtFirstName.Text;
-            string lastName = txtLastName.Text;
-            string email = txtEmail.Text;
-            string password = txtPassword.Text;
-            bool areAllFilled = firstName == null && lastName == null && email==null && password==null;
-            bool isChkBoxFilled = chkAcceptTerms.Checked;
-
-            if (areAllFilled && isChkBoxFilled){
-                MessageBox.Show("All fields must be filled.");
-            }
-            else{
-                MessageBox.Show("Hi, "+ firstName +". Thank you for the registration.");
-            }
-        }
-
-
-        public void clearInputs(object? sender, EventArgs args){
-            txtFirstName = null;
-            txtLastName = null;
-            txtEmail = null;
-            txtPassword = null;
-        }
+        private Button btnSubmit;
+        private Button btnClear;
         
+        private CheckBox chkAcceptTerms;
+
+
+        private void InitializeComponent()
+        {
+            // draw gui
+            txtFirstName = new TextBox();
+            txtLastName = new TextBox();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
+
+            lblFirstName = new Label();
+            lblLastName = new Label();
+            lblEmail = new Label();
+            lblPassword = new Label();
+            chkAcceptTerms = new CheckBox();
+
+            btnSubmit = new Button();
+            btnClear = new Button();
+
+
+            // label first name
+            lblFirstName.Text = "First Name";
+            lblFirstName.Location = new Point(20, 20);
+
+            //txt first name
+            txtFirstName.Location = new Point(20, 40);
+            txtFirstName.Size = new Size(200, 20);
+
+            // label last name
+            lblLastName.Text = "Last Name";
+            lblLastName.Location = new Point(20, 70);
+
+            //txt Last Name
+            txtLastName.Location = new Point(20, 90);
+            txtLastName.Size = new Size(200, 20);
+
+            // label Email
+            lblEmail.Text = "Email";
+            lblEmail.Location = new Point(20, 120);
+
+            //txt Email
+            txtEmail.Location = new Point(20, 140);
+            txtEmail.Size = new Size(200, 20);
+
+            // label Password
+            lblPassword.Text = "Password";
+            lblPassword.Location = new Point(20, 170);
+
+            //txt password
+            txtPassword.Location = new Point(20, 190);
+            txtPassword.Size = new Size(200, 20);
+
+            chkAcceptTerms.Text = "I accept terms and conditions";
+            chkAcceptTerms.Location = new Point(30, 240);
+            chkAcceptTerms.Size = new Size(20, 20);
+           //chkShowPass.CheckedChanged += ShowPass;
+
+            // button
+            btnSubmit.Text = "Submit";
+            btnSubmit.Location = new Point(40, 270);
+            btnSubmit.Size = new Size(100, 40);
+            //login event
+            btnSubmit.Click += startRegistration;
+
+            // button
+            btnClear.Text = "Clear";
+            btnClear.Location = new Point(130, 270);
+            btnClear.Size = new Size(100, 40);
+            //clear event
+            btnClear.Click += clearInputs;
+
+            this.ClientSize = new Size(800, 400);
+            this.Text = "Registration Form";
+            this.Controls.Add(lblFirstName);
+            this.Controls.Add(txtFirstName);
+            this.Controls.Add(lblLastName);
+            this.Controls.Add(txtLastName);
+            this.Controls.Add(lblEmail);
+            this.Controls.Add(txtEmail);
+            this.Controls.Add(lblPassword);
+            this.Controls.Add(txtPassword);
+            this.Controls.Add(chkAcceptTerms);
+            this.Controls.Add(btnSubmit);
+            this.Controls.Add(btnClear);
+        }
     }
 }
-
