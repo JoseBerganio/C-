@@ -9,12 +9,11 @@ namespace MyDesktopApp.Modules.Registration{
         private Label lblFirstName;
         private Label lblLastName;
         private Label lblPassword;
-        private Label lblEmail
+        private Label lblEmail;
 
         private Button btnSubmit;
         private Button btnClear;
         
-
         private CheckBox chkAcceptTerms;
 
 
@@ -31,6 +30,9 @@ namespace MyDesktopApp.Modules.Registration{
             lblEmail = new Label();
             lblPassword = new Label();
             chkAcceptTerms = new CheckBox();
+
+            btnSubmit = new Button();
+            btnClear = new Button();
 
 
             // label first name
@@ -62,27 +64,30 @@ namespace MyDesktopApp.Modules.Registration{
             lblPassword.Location = new Point(20, 160);
 
             //txt password
-            txtUser.Location = new Point(20, 190);
-            txtUser.Size = new Size(200, 20);
+            txtPassword.Location = new Point(20, 190);
+            txtPassword.Size = new Size(200, 20);
 
+            chkAcceptTerms.Text = "I accept terms and conditions"
             chkAcceptTerms.Location = new Point(30, 200);
             chkAcceptTerms.Size = new Size(80, 80);
            //chkShowPass.CheckedChanged += ShowPass;
 
             // button
             btnSubmit.Text = "Submit";
-            btnLogin.Location = new Point(40, 220);
+            btnSubmit.Location = new Point(40, 220);
+            btnSubmit.Size = new Size(80, 80);
             //login event
-            //btnLogin.Click += startLogin;
+            btnSubmit.Click += startRegistration;
 
             // button
-            btnClear = "Clear";
-            btnLogin.Location = new Point(90, 220);
-            //login event
-            //btnLogin.Click += startLogin;
+            btnClear.Text = "Clear";
+            btnClear.Location = new Point(90, 220);
+            btnClear.Size = new Size(80, 80);
+            //clear event
+            btnClear.Click += clearInputs;
 
             this.ClientSize = new Size(300, 160);
-            this.Text = "Login Form";
+            this.Text = "Registration Form";
             this.Controls.Add(lblFirstName);
             this.Controls.Add(txtFirstName);
             this.Controls.Add(lblLastName);
