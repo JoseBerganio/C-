@@ -1,0 +1,14 @@
+H:\Berganio - C#\Midterm\InterfaceDemo\bin\Debug\net9.0\InterfaceDemo.exe
+H:\Berganio - C#\Midterm\InterfaceDemo\bin\Debug\net9.0\InterfaceDemo.deps.json
+H:\Berganio - C#\Midterm\InterfaceDemo\bin\Debug\net9.0\InterfaceDemo.runtimeconfig.json
+H:\Berganio - C#\Midterm\InterfaceDemo\bin\Debug\net9.0\InterfaceDemo.dll
+H:\Berganio - C#\Midterm\InterfaceDemo\bin\Debug\net9.0\InterfaceDemo.pdb
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.GeneratedMSBuildEditorConfig.editorconfig
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.AssemblyInfoInputs.cache
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.AssemblyInfo.cs
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.csproj.CoreCompileInputs.cache
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.dll
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\refint\InterfaceDemo.dll
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.pdb
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\InterfaceDemo.genruntimeconfig.cache
+H:\Berganio - C#\Midterm\InterfaceDemo\obj\Debug\net9.0\ref\InterfaceDemo.dll
